@@ -1,0 +1,2 @@
+# Roaster_Control_ESP32
+This is a C/C++ program designed to operate an Quest M3s coffee roaster using an Arduino nano. Roaster temperature is assessed using 2 thermocouples (ET, BT), which is internally referenced to a temperature read by a DS1820. Thermocouples are interfaced via an I2C MCP3424 18-bit ADC. In the background the fan and heater of the roaster are controlled by Triacs. UART input and output is Artisan compatible.  
