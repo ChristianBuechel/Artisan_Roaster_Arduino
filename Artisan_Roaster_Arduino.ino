@@ -92,15 +92,41 @@ void process_CHAN()
 	}
 }
 
+void process_UNITS()
+{
+	char *arg;
+	arg = myCMD.next(); // Get the next argument from
+	if (arg != NULL)	// As long as it existed, take it
+	{
+		Serial.print("# Units set to ");
+		Serial.println(arg);
+		// printf("# Active channels set to %s\n", arg);
+	}
+}
+
+void process_FILT()
+{
+	char *arg;
+	arg = myCMD.next(); // Get the next argument from
+	if (arg != NULL)	// As long as it existed, take it
+	{
+		Serial.print("# Filt set to ");
+		Serial.println(arg);
+		// printf("# Active channels set to %s\n", arg);
+	}
+}
+
 void setup()
 {
 	Serial.begin(115200);
-	Serial.println("Starting Artisan Roaster Arduino");
+	//Serial.println("Starting Artisan Roaster Arduino");
 	myCMD.setDefaultHandler(unrecognized);	//
 	myCMD.addCommand("PWR", process_PWR);	//
 	myCMD.addCommand("FAN", process_FAN);	//
 	myCMD.addCommand("READ", process_READ); //
 	myCMD.addCommand("CHAN", process_CHAN); // register parse handlers
+	myCMD.addCommand("UNITS", process_UNITS); // register parse handlers
+	myCMD.addCommand("FILT", process_FILT); // register parse handlers
 	myCMD.clearBuffer();
 
 	TriacDimmer::begin(400, 2000, 0.81, 0.15); //>81 full ON or <1 full OFF

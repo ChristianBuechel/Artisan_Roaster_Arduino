@@ -57,43 +57,11 @@
    "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\eightanaloginputs",
    "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\Wire\\src",
    "-IC:\\Users\\buechel\\Documents\\Arduino\\libraries\\OneWire",
-   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\SerialCommand.cpp",
+   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\cADC.cpp",
    "-o",
-   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\SerialCommand.cpp.o"
+   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\cADC.cpp.o"
   ],
-  "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\SerialCommand.cpp"
- },
- {
-  "directory": "c:\\Users\\buechel\\Documents\\privat\\Arduino\\Artisan_Roaster_Arduino",
-  "arguments": [
-   "C:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_NANO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\eightanaloginputs",
-   "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\Wire\\src",
-   "-IC:\\Users\\buechel\\Documents\\Arduino\\libraries\\OneWire",
-   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TriacDimmer.cpp",
-   "-o",
-   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TriacDimmer.cpp.o"
-  ],
-  "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TriacDimmer.cpp"
+  "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\cADC.cpp"
  },
  {
   "directory": "c:\\Users\\buechel\\Documents\\privat\\Arduino\\Artisan_Roaster_Arduino",
@@ -153,11 +121,11 @@
    "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\eightanaloginputs",
    "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\Wire\\src",
    "-IC:\\Users\\buechel\\Documents\\Arduino\\libraries\\OneWire",
-   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\cADC.cpp",
+   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TriacDimmer.cpp",
    "-o",
-   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\cADC.cpp.o"
+   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TriacDimmer.cpp.o"
   ],
-  "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\cADC.cpp"
+  "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TriacDimmer.cpp"
  },
  {
   "directory": "c:\\Users\\buechel\\Documents\\privat\\Arduino\\Artisan_Roaster_Arduino",
@@ -190,6 +158,38 @@
    "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TypeK.cpp.o"
   ],
   "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\TypeK.cpp"
+ },
+ {
+  "directory": "c:\\Users\\buechel\\Documents\\privat\\Arduino\\Artisan_Roaster_Arduino",
+  "arguments": [
+   "C:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_NANO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\eightanaloginputs",
+   "-IC:\\Users\\buechel\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\Wire\\src",
+   "-IC:\\Users\\buechel\\Documents\\Arduino\\libraries\\OneWire",
+   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\SerialCommand.cpp",
+   "-o",
+   "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\SerialCommand.cpp.o"
+  ],
+  "file": "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\build\\sketch\\SerialCommand.cpp"
  },
  {
   "directory": "c:\\Users\\buechel\\Documents\\privat\\Arduino\\Artisan_Roaster_Arduino",

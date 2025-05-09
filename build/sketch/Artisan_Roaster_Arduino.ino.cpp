@@ -34,8 +34,12 @@ void process_READ();
 #line 83 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
 void process_CHAN();
 #line 95 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
+void process_UNITS();
+#line 107 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
+void process_FILT();
+#line 119 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
 void setup();
-#line 137 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
+#line 163 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
 void loop();
 #line 25 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
 void unrecognized(const char *command)
@@ -108,15 +112,41 @@ void process_CHAN()
 	}
 }
 
+void process_UNITS()
+{
+	char *arg;
+	arg = myCMD.next(); // Get the next argument from
+	if (arg != NULL)	// As long as it existed, take it
+	{
+		Serial.print("# Units set to ");
+		Serial.println(arg);
+		// printf("# Active channels set to %s\n", arg);
+	}
+}
+
+void process_FILT()
+{
+	char *arg;
+	arg = myCMD.next(); // Get the next argument from
+	if (arg != NULL)	// As long as it existed, take it
+	{
+		Serial.print("# Filt set to ");
+		Serial.println(arg);
+		// printf("# Active channels set to %s\n", arg);
+	}
+}
+
 void setup()
 {
 	Serial.begin(115200);
-	Serial.println("Starting Artisan Roaster Arduino");
+	//Serial.println("Starting Artisan Roaster Arduino");
 	myCMD.setDefaultHandler(unrecognized);	//
 	myCMD.addCommand("PWR", process_PWR);	//
 	myCMD.addCommand("FAN", process_FAN);	//
 	myCMD.addCommand("READ", process_READ); //
 	myCMD.addCommand("CHAN", process_CHAN); // register parse handlers
+	myCMD.addCommand("UNITS", process_UNITS); // register parse handlers
+	myCMD.addCommand("FILT", process_FILT); // register parse handlers
 	myCMD.clearBuffer();
 
 	TriacDimmer::begin(400, 2000, 0.81, 0.15); //>81 full ON or <1 full OFF

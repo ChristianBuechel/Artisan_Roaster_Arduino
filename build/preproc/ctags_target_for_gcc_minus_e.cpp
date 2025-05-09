@@ -105,15 +105,49 @@ void process_CHAN()
  }
 }
 
+void process_UNITS()
+{
+ char *arg;
+ arg = myCMD.next(); // Get the next argument from
+ if (arg != 
+# 99 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino" 3 4
+           __null
+# 99 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
+               ) // As long as it existed, take it
+ {
+  Serial.print("# Units set to ");
+  Serial.println(arg);
+  // printf("# Active channels set to %s\n", arg);
+ }
+}
+
+void process_FILT()
+{
+ char *arg;
+ arg = myCMD.next(); // Get the next argument from
+ if (arg != 
+# 111 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino" 3 4
+           __null
+# 111 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
+               ) // As long as it existed, take it
+ {
+  Serial.print("# Filt set to ");
+  Serial.println(arg);
+  // printf("# Active channels set to %s\n", arg);
+ }
+}
+
 void setup()
 {
  Serial.begin(115200);
- Serial.println("Starting Artisan Roaster Arduino");
+ //Serial.println("Starting Artisan Roaster Arduino");
  myCMD.setDefaultHandler(unrecognized); //
  myCMD.addCommand("PWR", process_PWR); //
  myCMD.addCommand("FAN", process_FAN); //
  myCMD.addCommand("READ", process_READ); //
  myCMD.addCommand("CHAN", process_CHAN); // register parse handlers
+ myCMD.addCommand("UNITS", process_UNITS); // register parse handlers
+ myCMD.addCommand("FILT", process_FILT); // register parse handlers
  myCMD.clearBuffer();
 
  TriacDimmer::begin(400, 2000, 0.81, 0.15); //>81 full ON or <1 full OFF
@@ -154,7 +188,7 @@ void setup()
 	DDRD |= (1 << PD3); // signal is on PIN PD3 (OC2B)
 
 	*/
-# 135 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
+# 161 "C:\\Users\\buechel\\HiDrive\\privat\\Arduino\\Artisan_Roaster_Arduino\\Artisan_Roaster_Arduino.ino"
 }
 
 void loop()
